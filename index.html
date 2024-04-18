@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">
+          Explorando Tendencias en Medios y Entretenimiento: Una Encuesta sobre
+          Hábitos de Consumo
+        </h1>
+        <p id="description">
+          Explora tus preferencias y hábitos de consumo en el mundo digital.
+          Esta breve encuesta, que toma solo 5 minutos, nos ayudará a captar las
+          tendencias actuales y mejorar las experiencias de usuario. ¡Tu opinión
+          es valiosa!
+        </p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Información Personal</legend>
+          <label id="name-label" for="name">Nombre:</label>
+          <input type="text" name="name" id="name" />
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+        </fieldset>
+        <fieldset>
+          <legend>Información Demográfica Básica</legend>
+          <label id="number-label" for="number">Edad:</label>
+          <input type="number" name="age" id="number" min="18" max="70" />
+          <label for="gender">¿De que género te identificas?</label>
+          <select name="gender" id="gender">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label for="province">¿En qué provincia resides?</label>
+          <input list="provinces" type="text" name="province" id="province" />
+          <datalist id="provinces">
+            <option value="Buenos Aires"></option>
+            <option value="CABA"></option>
+            <option value="Catamarca"></option>
+            <option value="Chaco"></option>
+            <option value="Chubut"></option>
+            <option value="Córdoba"></option>
+            <option value="Corrientes"></option>
+            <option value="Entre Ríos"></option>
+            <option value="Formosa"></option>
+            <option value="Jujuy"></option>
+            <option value="La Pampa"></option>
+            <option value="La Rioja"></option>
+            <option value="Mendoza"></option>
+            <option value="Misiones"></option>
+            <option value="Neuquén"></option>
+            <option value="Río Negro"></option>
+            <option value="Salta"></option>
+            <option value="San Juan"></option>
+            <option value="San Luis"></option>
+            <option value="Santa Cruz"></option>
+            <option value="Santa Fe"></option>
+            <option value="Santiago Del Estero"></option>
+            <option
+              value="Tierra del Fuego, Antártida e Islas del Atlántico Sur"
+            ></option>
+            <option value="Tucumán"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>1 Preferencias de Consumo de Medios</legend>
+
+          <p>¿Qué tipo de contenido consumes con más frecuencia?</p>
+
+          <label for="series-tv">Series de TV</label>
+          <input type="checkbox" name="series-tv" id="series-tv" />
+          <label for="peliculas">Peliculas</label>
+          <input type="checkbox" name="peliculas" id="peliculas" />
+          <label for="podcasts">Podcasts</label>
+          <input type="checkbox" name="podcasts" id="podcasts" />
+          <label for="noticias">Noticias</label>
+          <input type="checkbox" name="noticias" id="noticias" />
+          <label for="musica">Música</label>
+          <input type="checkbox" name="musica" id="musica" />
+          <label for="otros">Otros</label>
+          <input type="checkbox" name="otros" id="otros" />
+
+          <p>
+            ¿A través de qué plataformas prefiere consumir contenido de
+            entretenimiento
+          </p>
+          <label for="tv-tradicional">Televisión tradicional </label>
+          <input type="checkbox" name="tv-tradicional" id="tv-tradicional" />
+          <label for="streaming">Servicios de streaming</label>
+          <input type="checkbox" name="streaming" id="streaming" />
+          <label for="youtube">YouTube</label>
+          <input type="checkbox" name="youtube" id="youtube" />
+          <label for="redes-sociales">Redes sociales</label>
+          <input type="checkbox" name="redes-sociales" id="redes-sociales" />
+          <label for="otros">Otros</label>
+          <input type="checkbox" name="otros" id="otros" />
+        </fieldset>
+        <fieldset>
+          <legend>2 Frecuencia de Consumo:</legend>
+          <p>
+            ¿Con qué frecuencia ves series de televisión o películas en
+            plataformas de streaming?
+          </p>
+          <label for="diariamente">Diariamente</label>
+          <input type="radio" name="frecuencia" id="diariamente" />
+          <label for="varias-a-la-semana">Varias veces a la semana</label>
+          <input type="radio" name="frecuencia" id="varias-a-la-semana" />
+          <label for="una-vez-a-la-semana">Una vez a la semana</label>
+          <input type="radio" name="frecuencia" id="una-vez-a-la-semana" />
+          <label for="raramente">Raramente</label>
+          <input type="radio" name="frecuencia" id="raramente" />
+
+          <label for="horas">
+            ¿Cuántas horas al día, en promedio, dedicas a consumir medios de
+            entretenimiento?
+          </label>
+          <input type="number" name="horas" id="horas" min="1" max="24" />
+        </fieldset>
+        <fieldset>
+          <legend>3 Desiciones sobre Contenido:</legend>
+          <p>
+            ¿Qué factores influyen más en tu decisión de ver una serie o
+            película?
+          </p>
+          <label for="recomendacion-amigos-familia"
+            >Recomendaciones de amigos/familiares</label
+          >
+          <input
+            type="checkbox"
+            name="recomendacion-amigos-familia"
+            id="recomendacion-amigos-familia"
+          />
+          <label for="criticas">Críticas en linea</label>
+          <input type="checkbox" name="criticas" id="criticas" />
+          <label for="trailers">Trailers</label>
+          <input type="checkbox" name="trailers" id="trailers" />
+          <label for="popularidad">Popularidad</label>
+          <input type="checkbox" name="popularidad" id="popularidad" />
+
+          <p>
+            Cuando eliges escuchar un podcast, ¿qué es más importante para ti?
+          </p>
+          <label for="tema">El tema</label>
+          <input type="checkbox" name="tema" id="tema" />
+          <label for="anfritrion">El anfritrion</label>
+          <input type="checkbox" name="afritrion" id="anfritrion" />
+          <label for="recomendaciones">Recomendaciones</label>
+          <input type="checkbox" name="recomendaciones" id="recomendaciones" />
+          <label for="duracion">La duracion</label>
+          <input type="checkbox" name="duracion" id="duracion" />
+        </fieldset>
+        <fieldset>
+          <legend>4 Pago y Subscripciones:</legend>
+          <p>
+            ¿Estás suscrito a alguna plataforma de streaming de pago? Si es así,
+            ¿a cuántas?
+          </p>
+          <label for="cantidad-plataformas"
+            >Ingrese la cantidad de plataformas:</label
+          >
+          <input
+            type="number"
+            min="1"
+            max="20"
+            name="cantidad-plataformas"
+            id="cantidad-plataformas"
+          />
+
+          <label for="dinero">
+            ¿Cuánto estás dispuesto a pagar por mes por el acceso a contenido de
+            entretenimiento?
+          </label>
+          <input type="number" inputmode="numeric" maxlength="9" />
+        </fieldset>
+        <fieldset>
+          <legend>5 Impacto de la Publicidad</legend>
+          <p>
+            ¿Cómo prefieres que se maneje la publicidad en las plataformas de
+            medios que usas?
+          </p>
+          <label for="sin-publicidad">Sin Publicidad</label>
+          <input type="checkbox" name="sin-publicidad" id="sin-publicidad" />
+          <label for="publicidad-limitada">Publicidad Limitada</label>
+          <input
+            type="checkbox"
+            name="publicidad-limitada"
+            id="publicidad-limitada"
+          />
+          <label for="no-importa-publicidad">No me importa la publicidad</label>
+          <input
+            type="checkbox"
+            name="no-importa-publicidad"
+            id="no-importa-publicidad"
+          />
+
+          <p>
+            ¿Alguna vez has comprado un producto o servicio como resultado de un
+            anuncio visto en una plataforma de entretenimiento?
+          </p>
+          <label for="si">Si</label>
+          <input type="radio" name="si-o-no" id="si" />
+          <label for="no">No</label>
+          <input type="radio" name="si-o-no" id="no" />
+        </fieldset>
+        <fieldset>
+          <legend>6 Tendencias y Futuro del Consumo de Medios:</legend>
+          <p>
+            ¿Crees que aumentará tu consumo de medios de entretenimiento en los
+            próximos años? ¿Por qué o por qué no?
+          </p>
+          <textarea
+            name="opinion-usuario"
+            id="opinion-usuario"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <p>
+            ¿Qué tipo de contenido te gustaría ver más disponible en las
+            plataformas de entretenimiento?
+          </p>
+          <textarea
+            name="contenido-disponible"
+            id="contenido-disponible"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
