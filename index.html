@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <header class="header">
         <h1 id="title">
           Explorando Tendencias en Medios y Entretenimiento: Una Encuesta sobre
           Hábitos de Consumo
         </h1>
-        <p id="description">
+        <p id="description" class="description">
           Explora tus preferencias y hábitos de consumo en el mundo digital.
           Esta breve encuesta, que toma solo 5 minutos, nos ayudará a captar las
           tendencias actuales y mejorar las experiencias de usuario. ¡Tu opinión
           es valiosa!
         </p>
       </header>
-      <form id="survey-form">
-        <fieldset>
-          <legend>Información Personal</legend>
+      <form id="survey-form" class="form">
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">Información Personal</legend>
           <label id="name-label" for="name">Nombre:</label>
           <input type="text" name="name" id="name" />
           <label id="email-label" for="email">Email:</label>
           <input type="email" name="email" id="email" />
         </fieldset>
-        <fieldset>
-          <legend>Información Demográfica Básica</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">Información Demográfica Básica</legend>
           <label id="number-label" for="number">Edad:</label>
           <input type="number" name="age" id="number" min="18" max="70" />
           <label for="gender">¿De que género te identificas?</label>
@@ -69,8 +75,8 @@
             <option value="Tucumán"></option>
           </datalist>
         </fieldset>
-        <fieldset>
-          <legend>1 Preferencias de Consumo de Medios</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">1 Preferencias de Consumo de Medios</legend>
 
           <p>¿Qué tipo de contenido consumes con más frecuencia?</p>
 
@@ -112,10 +118,9 @@
             <option value="accion">Acción</option>
             <option value="animacion">Animación</option>
           </select>
-
         </fieldset>
-        <fieldset>
-          <legend>2 Frecuencia de Consumo:</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">2 Frecuencia de Consumo:</legend>
           <p>
             ¿Con qué frecuencia ves series de televisión o películas en
             plataformas de streaming?
@@ -135,8 +140,8 @@
           </label>
           <input type="number" name="horas" id="horas" min="1" max="24" />
         </fieldset>
-        <fieldset>
-          <legend>3 Desiciones sobre Contenido:</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">3 Desiciones sobre Contenido:</legend>
           <p>
             ¿Qué factores influyen más en tu decisión de ver una serie o
             película?
@@ -168,8 +173,8 @@
           <label for="duracion">La duracion</label>
           <input type="checkbox" name="duracion" id="duracion" />
         </fieldset>
-        <fieldset>
-          <legend>4 Pago y Subscripciones:</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">4 Pago y Subscripciones:</legend>
           <p>
             ¿Estás suscrito a alguna plataforma de streaming de pago? Si es así,
             ¿a cuántas?
@@ -191,8 +196,8 @@
           </label>
           <input type="number" inputmode="numeric" maxlength="9" />
         </fieldset>
-        <fieldset>
-          <legend>5 Impacto de la Publicidad</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">5 Impacto de la Publicidad</legend>
           <p>
             ¿Cómo prefieres que se maneje la publicidad en las plataformas de
             medios que usas?
@@ -221,8 +226,8 @@
           <label for="no">No</label>
           <input type="radio" name="si-o-no" id="no" />
         </fieldset>
-        <fieldset>
-          <legend>6 Tendencias y Futuro del Consumo de Medios:</legend>
+        <fieldset class="fieldset">
+          <legend class="fieldset-title">6 Tendencias y Futuro del Consumo de Medios:</legend>
           <p>
             ¿Crees que aumentará tu consumo de medios de entretenimiento en los
             próximos años? ¿Por qué o por qué no?
@@ -244,6 +249,7 @@
             rows="10"
           ></textarea>
         </fieldset>
+        <button type="button">Enviar</button>
       </form>
     </div>
   </body>

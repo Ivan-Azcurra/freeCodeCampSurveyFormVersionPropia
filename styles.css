@@ -1,0 +1,46 @@
+:root{
+  --blanquito: #F6F5F2;
+  --beige: #F0EBE3;
+  --rosa-pastel: #F3D0D7;
+  --blaquito-mas-oscuro: #FFEFEF;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    var(--beige),
+    #f1e5db,
+    #f3ded6,
+    #f5d7d5,
+    var(--rosa-pastel)
+  );
+}
+
+.description{
+  font-size: 22px;
+}
+
+.container{
+    max-width: 960px;
+    margin: 3.125rem auto 0 auto;
+}
+
+.form{
+  background-color: var(--blanquito);
+  border-radius: 10px;
+  border: 1px solid var(--rosa-pastel);
+  padding: 2.5rem;
+}
+
+.fieldset{
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.fieldset-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
