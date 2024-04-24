@@ -34,18 +34,36 @@
           <label class="form-label" id="email-label" for="email">Email:</label>
           <input class="input-form" type="email" name="email" id="email" />
         </fieldset>
+        <hr>
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Demográfica Básica</legend>
           <label class="form-label" id="number-label" for="number">Edad:</label>
-          <input class="input-form" type="number" name="age" id="number" min="18" max="70" />
-          <label class="form-label" for="gender">¿De que género te identificas?</label>
-          <select  class="select-input-form" name="gender" id="gender">
+          <input
+            class="input-form"
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="70"
+          />
+          <label class="form-label" for="gender"
+            >¿De que género te identificas?</label
+          >
+          <select class="select-input-form" name="gender" id="gender">
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="otro">Otro</option>
           </select>
-          <label class="form-label" for="province">¿En qué provincia resides?</label>
-          <input class="input-form" list="provinces" type="text" name="province" id="province" />
+          <label class="form-label" for="province"
+            >¿En qué provincia resides?</label
+          >
+          <input
+            class="input-form"
+            list="provinces"
+            type="text"
+            name="province"
+            id="province"
+          />
           <datalist id="provinces">
             <option value="Buenos Aires"></option>
             <option value="CABA"></option>
@@ -76,42 +94,127 @@
           </datalist>
         </fieldset>
         <fieldset class="fieldset">
-          <legend class="fieldset-title">1 Preferencias de Consumo de Medios</legend>
+          <legend class="fieldset-title">
+            1 Preferencias de Consumo de Medios
+          </legend>
 
-          <p class="form-label">¿Qué tipo de contenido consumes con más frecuencia?</p>
-          
+          <p class="form-label">
+            ¿Qué tipo de contenido consumes con más frecuencia?
+          </p>
+
           <label class="form-label form-label-checkbox" for="series-tv">
             Series de TV
-            <input class="input-checkbox" type="checkbox" name="series-tv" id="series-tv" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="series-tv"
+              id="series-tv"
+            />
           </label>
-          <label for="peliculas">Peliculas</label>
-          <input type="checkbox" name="peliculas" id="peliculas" />
-          <label for="podcasts">Podcasts</label>
-          <input type="checkbox" name="podcasts" id="podcasts" />
-          <label for="noticias">Noticias</label>
-          <input type="checkbox" name="noticias" id="noticias" />
-          <label for="musica">Música</label>
-          <input type="checkbox" name="musica" id="musica" />
-          <label for="otros">Otros</label>
-          <input type="checkbox" name="otros" id="otros" />
+          <label class="form-label form-label-checkbox" for="peliculas">
+            Peliculas
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="peliculas"
+              id="peliculas"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="podcasts">
+            Podcasts
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="podcasts"
+              id="podcasts"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="noticias">
+            Noticias
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="noticias"
+              id="noticias"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="musica">
+            Música
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="musica"
+              id="musica"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="otros">
+            Otros
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="otros"
+              id="otros"
+            />
+          </label>
 
           <p class="form-label">
             ¿A través de qué plataformas prefiere consumir contenido de
             entretenimiento?
           </p>
-          <label for="tv-tradicional">Televisión tradicional </label>
-          <input type="checkbox" name="tv-tradicional" id="tv-tradicional" />
-          <label for="streaming">Servicios de streaming</label>
-          <input type="checkbox" name="streaming" id="streaming" />
-          <label for="youtube">YouTube</label>
-          <input type="checkbox" name="youtube" id="youtube" />
-          <label for="redes-sociales">Redes sociales</label>
-          <input type="checkbox" name="redes-sociales" id="redes-sociales" />
-          <label for="otros">Otros</label>
-          <input type="checkbox" name="otros" id="otros" />
+          <label class="form-label form-label-checkbox" for="tv-tradicional">
+            Televisión tradicional
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="tv-tradicional"
+              id="tv-tradicional"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="streaming">
+            Servicios de streaming
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="streaming"
+              id="streaming"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="youtube">
+            YouTube
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="youtube"
+              id="youtube"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="redes-sociales">
+            Redes sociales
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="redes-sociales"
+              id="redes-sociales"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="otros">
+            Otros
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="otros"
+              id="otros"
+            />
+          </label>
 
-          <p>¿Cuál es tu género favorito de series y películas?</p>
-          <select name="genero-favorito" id="dropdown">
+          <p class="form-label">
+            ¿Cuál es tu género favorito de series y películas?
+          </p>
+          <select
+            class="select-input-form"
+            name="genero-favorito"
+            id="dropdown"
+          >
             <option value="drama">Drama</option>
             <option value="comedia">Comedia</option>
             <option value="terror">Terror</option>
@@ -123,7 +226,7 @@
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">2 Frecuencia de Consumo:</legend>
-          <p>
+          <p class="form-label">
             ¿Con qué frecuencia ves series de televisión o películas en
             plataformas de streaming?
           </p>
@@ -229,7 +332,9 @@
           <input type="radio" name="si-o-no" id="no" />
         </fieldset>
         <fieldset class="fieldset">
-          <legend class="fieldset-title">6 Tendencias y Futuro del Consumo de Medios:</legend>
+          <legend class="fieldset-title">
+            6 Tendencias y Futuro del Consumo de Medios:
+          </legend>
           <p>
             ¿Crees que aumentará tu consumo de medios de entretenimiento en los
             próximos años? ¿Por qué o por qué no?
