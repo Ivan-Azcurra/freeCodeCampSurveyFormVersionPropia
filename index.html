@@ -29,23 +29,23 @@
       <form id="survey-form" class="form">
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Personal</legend>
-          <label id="name-label" for="name">Nombre:</label>
-          <input type="text" name="name" id="name" />
-          <label id="email-label" for="email">Email:</label>
-          <input type="email" name="email" id="email" />
+          <label class="form-label" id="name-label" for="name">Nombre:</label>
+          <input class="input-form" type="text" name="name" id="name" />
+          <label class="form-label" id="email-label" for="email">Email:</label>
+          <input class="input-form" type="email" name="email" id="email" />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Demográfica Básica</legend>
-          <label id="number-label" for="number">Edad:</label>
-          <input type="number" name="age" id="number" min="18" max="70" />
-          <label for="gender">¿De que género te identificas?</label>
-          <select name="gender" id="gender">
+          <label class="form-label" id="number-label" for="number">Edad:</label>
+          <input class="input-form" type="number" name="age" id="number" min="18" max="70" />
+          <label class="form-label" for="gender">¿De que género te identificas?</label>
+          <select  class="select-input-form" name="gender" id="gender">
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="otro">Otro</option>
           </select>
-          <label for="province">¿En qué provincia resides?</label>
-          <input list="provinces" type="text" name="province" id="province" />
+          <label class="form-label" for="province">¿En qué provincia resides?</label>
+          <input class="input-form" list="provinces" type="text" name="province" id="province" />
           <datalist id="provinces">
             <option value="Buenos Aires"></option>
             <option value="CABA"></option>
