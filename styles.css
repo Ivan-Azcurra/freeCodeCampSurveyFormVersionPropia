@@ -34,6 +34,7 @@
 }
 
 .fieldset {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: none;
@@ -47,6 +48,13 @@
 .form-label {
   font-size: 18px;
   margin-bottom: 8px;
+}
+
+.form-label-checkbox{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 40px;
 }
 
 .input-form {
@@ -64,3 +72,20 @@
   font-size: 18px;
   margin: 8px 0 8px 8px;
 }
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+input[type="checkbox"]::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  line-height: 0.8;
+  margin-left: 30px;
+}
+
