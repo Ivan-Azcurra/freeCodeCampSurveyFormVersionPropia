@@ -34,7 +34,6 @@
           <label class="form-label" id="email-label" for="email">Email:</label>
           <input class="input-form" type="email" name="email" id="email" />
         </fieldset>
-        <hr>
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Demográfica Básica</legend>
           <label class="form-label" id="number-label" for="number">Edad:</label>
@@ -230,64 +229,88 @@
             ¿Con qué frecuencia ves series de televisión o películas en
             plataformas de streaming?
           </p>
-          <label for="diariamente">Diariamente</label>
-          <input type="radio" name="frecuencia" id="diariamente" />
-          <label for="varias-a-la-semana">Varias veces a la semana</label>
-          <input type="radio" name="frecuencia" id="varias-a-la-semana" />
-          <label for="una-vez-a-la-semana">Una vez a la semana</label>
-          <input type="radio" name="frecuencia" id="una-vez-a-la-semana" />
-          <label for="raramente">Raramente</label>
-          <input type="radio" name="frecuencia" id="raramente" />
+          <label class="form-label form-label-checkbox" for="diariamente">
+            Diariamente
+            <input class="input-radio" type="radio" name="frecuencia" id="diariamente" />
+          </label>
+          <label class="form-label form-label-checkbox" for="varias-a-la-semana">
+            Varias veces a la semana
+            <input class="input-radio" type="radio" name="frecuencia" id="varias-a-la-semana" />
+          </label>
+          <label class="form-label form-label-checkbox" for="una-vez-a-la-semana">
+            Una vez a la semana
+            <input class="input-radio" type="radio" name="frecuencia" id="una-vez-a-la-semana" />
+          </label>
+          <label class="form-label form-label-checkbox" for="raramente">
+            Raramente
+            <input class="input-radio" type="radio" name="frecuencia" id="raramente" />
+          </label>
 
-          <label for="horas">
+          <label class="form-label" for="horas">
             ¿Cuántas horas al día, en promedio, dedicas a consumir medios de
             entretenimiento?
           </label>
-          <input type="number" name="horas" id="horas" min="1" max="24" />
+          <input class="input-form" type="number" name="horas" id="horas" min="1" max="24" />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">3 Desiciones sobre Contenido:</legend>
-          <p>
+          <p class="form-label">
             ¿Qué factores influyen más en tu decisión de ver una serie o
             película?
           </p>
-          <label for="recomendacion-amigos-familia"
-            >Recomendaciones de amigos/familiares</label
-          >
-          <input
-            type="checkbox"
-            name="recomendacion-amigos-familia"
-            id="recomendacion-amigos-familia"
-          />
-          <label for="criticas">Críticas en linea</label>
-          <input type="checkbox" name="criticas" id="criticas" />
-          <label for="trailers">Trailers</label>
-          <input type="checkbox" name="trailers" id="trailers" />
-          <label for="popularidad">Popularidad</label>
-          <input type="checkbox" name="popularidad" id="popularidad" />
+          <label class="form-label form-label-checkbox" for="recomendacion-amigos-familia"
+            >Recomendaciones de amigos/familiares
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="recomendacion-amigos-familia"
+              id="recomendacion-amigos-familia"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="criticas">
+            Críticas en linea
+            <input class="input-checkbox" type="checkbox" name="criticas" id="criticas" />
+          </label>
+          <label class="form-label form-label-checkbox" for="trailers">
+            Trailers
+            <input class="input-checkbox" type="checkbox" name="trailers" id="trailers" />
+          </label>
+          <label class="form-label form-label-checkbox" for="popularidad">
+            Popularidad
+            <input class="input-checkbox" type="checkbox" name="popularidad" id="popularidad" />
+          </label>
 
-          <p>
+          <p class="form-label">
             Cuando eliges escuchar un podcast, ¿qué es más importante para ti?
           </p>
-          <label for="tema">El tema</label>
-          <input type="checkbox" name="tema" id="tema" />
-          <label for="anfritrion">El anfritrion</label>
-          <input type="checkbox" name="afritrion" id="anfritrion" />
-          <label for="recomendaciones">Recomendaciones</label>
-          <input type="checkbox" name="recomendaciones" id="recomendaciones" />
-          <label for="duracion">La duracion</label>
-          <input type="checkbox" name="duracion" id="duracion" />
+          <label class="form-label form-label-checkbox" for="tema">
+            El tema
+            <input class="input-checkbox" type="checkbox" name="tema" id="tema" />
+          </label>
+          <label class="form-label form-label-checkbox" for="anfritrion">
+            El anfritrion
+            <input class="input-checkbox" type="checkbox" name="afritrion" id="anfritrion" />
+          </label>
+          <label class="form-label form-label-checkbox" for="recomendaciones">
+            Recomendaciones
+            <input class="input-checkbox" type="checkbox" name="recomendaciones" id="recomendaciones" />
+          </label>
+          <label class="form-label form-label-checkbox" for="duracion">
+            La duracion
+            <input class="input-checkbox" type="checkbox" name="duracion" id="duracion" />
+          </label>
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">4 Pago y Subscripciones:</legend>
-          <p>
+          <p class="form-label">
             ¿Estás suscrito a alguna plataforma de streaming de pago? Si es así,
             ¿a cuántas?
           </p>
-          <label for="cantidad-plataformas"
+          <label class="form-label" for="cantidad-plataformas"
             >Ingrese la cantidad de plataformas:</label
           >
           <input
+            class="input-form"
             type="number"
             min="1"
             max="20"
@@ -295,68 +318,82 @@
             id="cantidad-plataformas"
           />
 
-          <label for="dinero">
+          <label class="form-label" for="dinero">
             ¿Cuánto estás dispuesto a pagar por mes por el acceso a contenido de
             entretenimiento?
           </label>
-          <input type="number" inputmode="numeric" maxlength="9" />
+          <input class="input-form" type="number" inputmode="numeric" maxlength="9" />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">5 Impacto de la Publicidad</legend>
-          <p>
+          <p class="form-label">
             ¿Cómo prefieres que se maneje la publicidad en las plataformas de
             medios que usas?
           </p>
-          <label for="sin-publicidad">Sin Publicidad</label>
-          <input type="checkbox" name="sin-publicidad" id="sin-publicidad" />
-          <label for="publicidad-limitada">Publicidad Limitada</label>
-          <input
-            type="checkbox"
-            name="publicidad-limitada"
-            id="publicidad-limitada"
-          />
-          <label for="no-importa-publicidad">No me importa la publicidad</label>
-          <input
-            type="checkbox"
-            name="no-importa-publicidad"
-            id="no-importa-publicidad"
-          />
+          <label class="form-label form-label-checkbox" for="sin-publicidad">
+            Sin Publicidad
+            <input class="input-checkbox" type="checkbox" name="sin-publicidad" id="sin-publicidad" />
+          </label>
+          <label class="form-label form-label-checkbox" for="publicidad-limitada">
+            Publicidad Limitada
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="publicidad-limitada"
+              id="publicidad-limitada"
+            />
+          </label>
+          <label class="form-label form-label-checkbox" for="no-importa-publicidad">
+            No me importa la publicidad
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="no-importa-publicidad"
+              id="no-importa-publicidad"
+            />
+          </label>
 
-          <p>
+          <p class="form-label">
             ¿Alguna vez has comprado un producto o servicio como resultado de un
             anuncio visto en una plataforma de entretenimiento?
           </p>
-          <label for="si">Si</label>
-          <input type="radio" name="si-o-no" id="si" />
-          <label for="no">No</label>
-          <input type="radio" name="si-o-no" id="no" />
+          <label class="form-label form-label-checkbox" for="si">
+            Si
+            <input class="input-checkbox" type="radio" name="si-o-no" id="si" />
+          </label>
+          <label class="form-label form-label-checkbox" for="no">
+            No
+            <input class="input-checkbox" type="radio" name="si-o-no" id="no" />
+          </label>
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">
             6 Tendencias y Futuro del Consumo de Medios:
           </legend>
-          <p>
+          <p class="form-label">
             ¿Crees que aumentará tu consumo de medios de entretenimiento en los
             próximos años? ¿Por qué o por qué no?
           </p>
           <textarea
+            class="input-textarea"
             name="opinion-usuario"
             id="opinion-usuario"
             cols="30"
             rows="10"
           ></textarea>
-          <p>
+          <p class="form-label">
             ¿Qué tipo de contenido te gustaría ver más disponible en las
             plataformas de entretenimiento?
           </p>
           <textarea
+            class="input-textarea"
             name="contenido-disponible"
             id="contenido-disponible"
             cols="30"
             rows="10"
           ></textarea>
         </fieldset>
-        <button type="button">Enviar</button>
+        <button class="button" type="button">Enviar</button>
       </form>
     </div>
   </body>
