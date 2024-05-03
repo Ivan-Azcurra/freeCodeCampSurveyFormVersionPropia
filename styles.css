@@ -92,6 +92,7 @@ p[class="form-label"] {
 
 input[type="number"] {
  max-width: 80px;
+ padding-right: 5px;
 }
 
 .select-input-form {

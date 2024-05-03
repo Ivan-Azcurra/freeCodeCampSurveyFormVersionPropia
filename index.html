@@ -30,9 +30,21 @@
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Personal</legend>
           <label class="form-label" id="name-label" for="name">Nombre:</label>
-          <input class="input-form" type="text" name="name" id="name" />
+          <input
+            class="input-form"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ingresa tu nombre completo"
+          />
           <label class="form-label" id="email-label" for="email">Email:</label>
-          <input class="input-form" type="email" name="email" id="email" />
+          <input
+            class="input-form"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingresa tu correo electronico"
+          />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">Información Demográfica Básica</legend>
@@ -44,6 +56,7 @@
             id="number"
             min="18"
             max="70"
+            placeholder="Edad"
           />
           <label class="form-label" for="gender"
             >¿De que género te identificas?</label
@@ -108,6 +121,7 @@
               type="checkbox"
               name="series-tv"
               id="series-tv"
+              value="series-tv"
             />
           </label>
           <label class="form-label form-label-checkbox" for="peliculas">
@@ -117,6 +131,7 @@
               type="checkbox"
               name="peliculas"
               id="peliculas"
+              value="peliculas"
             />
           </label>
           <label class="form-label form-label-checkbox" for="podcasts">
@@ -126,6 +141,7 @@
               type="checkbox"
               name="podcasts"
               id="podcasts"
+              value="podcasts"
             />
           </label>
           <label class="form-label form-label-checkbox" for="noticias">
@@ -135,6 +151,7 @@
               type="checkbox"
               name="noticias"
               id="noticias"
+              value="noticias"
             />
           </label>
           <label class="form-label form-label-checkbox" for="musica">
@@ -144,6 +161,7 @@
               type="checkbox"
               name="musica"
               id="musica"
+              value="musica"
             />
           </label>
           <label class="form-label form-label-checkbox" for="otros">
@@ -153,6 +171,7 @@
               type="checkbox"
               name="otros"
               id="otros"
+              value="otros"
             />
           </label>
 
@@ -167,6 +186,7 @@
               type="checkbox"
               name="tv-tradicional"
               id="tv-tradicional"
+              value="tv-tradicional"
             />
           </label>
           <label class="form-label form-label-checkbox" for="streaming">
@@ -176,6 +196,7 @@
               type="checkbox"
               name="streaming"
               id="streaming"
+              value="streaming"
             />
           </label>
           <label class="form-label form-label-checkbox" for="youtube">
@@ -185,6 +206,7 @@
               type="checkbox"
               name="youtube"
               id="youtube"
+              value="youtube"
             />
           </label>
           <label class="form-label form-label-checkbox" for="redes-sociales">
@@ -194,15 +216,20 @@
               type="checkbox"
               name="redes-sociales"
               id="redes-sociales"
+              value="redes-sociales"
             />
           </label>
           <label class="form-label form-label-checkbox" for="otros">
             Otros
+            <!--El atributo 'value' del input de id 'otros' puede 
+            crear confusiones en la base de datos. RESOLVER cuando
+            se conecte a la base de datos -->
             <input
               class="input-checkbox"
               type="checkbox"
               name="otros"
               id="otros"
+              value="otros"
             />
           </label>
 
@@ -231,26 +258,59 @@
           </p>
           <label class="form-label form-label-checkbox" for="diariamente">
             Diariamente
-            <input class="input-radio" type="radio" name="frecuencia" id="diariamente" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="frecuencia"
+              id="diariamente"
+            />
           </label>
-          <label class="form-label form-label-checkbox" for="varias-a-la-semana">
+          <label
+            class="form-label form-label-checkbox"
+            for="varias-a-la-semana"
+          >
             Varias veces a la semana
-            <input class="input-radio" type="radio" name="frecuencia" id="varias-a-la-semana" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="frecuencia"
+              id="varias-a-la-semana"
+            />
           </label>
-          <label class="form-label form-label-checkbox" for="una-vez-a-la-semana">
+          <label
+            class="form-label form-label-checkbox"
+            for="una-vez-a-la-semana"
+          >
             Una vez a la semana
-            <input class="input-radio" type="radio" name="frecuencia" id="una-vez-a-la-semana" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="frecuencia"
+              id="una-vez-a-la-semana"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="raramente">
             Raramente
-            <input class="input-radio" type="radio" name="frecuencia" id="raramente" />
+            <input
+              class="input-radio"
+              type="radio"
+              name="frecuencia"
+              id="raramente"
+            />
           </label>
 
           <label class="form-label" for="horas">
             ¿Cuántas horas al día, en promedio, dedicas a consumir medios de
             entretenimiento?
           </label>
-          <input class="input-form" type="number" name="horas" id="horas" min="1" max="24" />
+          <input
+            class="input-form"
+            type="number"
+            name="horas"
+            id="horas"
+            min="1"
+            max="24"
+          />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">3 Desiciones sobre Contenido:</legend>
@@ -258,26 +318,47 @@
             ¿Qué factores influyen más en tu decisión de ver una serie o
             película?
           </p>
-          <label class="form-label form-label-checkbox" for="recomendacion-amigos-familia"
+          <label
+            class="form-label form-label-checkbox"
+            for="recomendacion-amigos-familia"
             >Recomendaciones de amigos/familiares
             <input
               class="input-checkbox"
               type="checkbox"
               name="recomendacion-amigos-familia"
               id="recomendacion-amigos-familia"
+              value="recomendacion-amigos-familia"
             />
           </label>
           <label class="form-label form-label-checkbox" for="criticas">
             Críticas en linea
-            <input class="input-checkbox" type="checkbox" name="criticas" id="criticas" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="criticas"
+              id="criticas"
+              value="criticas"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="trailers">
             Trailers
-            <input class="input-checkbox" type="checkbox" name="trailers" id="trailers" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="trailers"
+              id="trailers"
+              value="trailers"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="popularidad">
             Popularidad
-            <input class="input-checkbox" type="checkbox" name="popularidad" id="popularidad" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="popularidad"
+              id="popularidad"
+              value="popularidad"
+            />
           </label>
 
           <p class="form-label">
@@ -285,19 +366,43 @@
           </p>
           <label class="form-label form-label-checkbox" for="tema">
             El tema
-            <input class="input-checkbox" type="checkbox" name="tema" id="tema" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="tema"
+              id="tema"
+              value="tema"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="anfritrion">
             El anfritrion
-            <input class="input-checkbox" type="checkbox" name="afritrion" id="anfritrion" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="afritrion"
+              id="anfritrion"
+              value="anfritrion"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="recomendaciones">
             Recomendaciones
-            <input class="input-checkbox" type="checkbox" name="recomendaciones" id="recomendaciones" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="recomendaciones"
+              id="recomendaciones"
+              value="recomendaciones"
+            />
           </label>
           <label class="form-label form-label-checkbox" for="duracion">
             La duracion
-            <input class="input-checkbox" type="checkbox" name="duracion" id="duracion" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="duracion"
+              id="duracion"
+              value="duracion"
+            />
           </label>
         </fieldset>
         <fieldset class="fieldset">
@@ -322,7 +427,12 @@
             ¿Cuánto estás dispuesto a pagar por mes por el acceso a contenido de
             entretenimiento?
           </label>
-          <input class="input-form" type="number" inputmode="numeric" maxlength="9" />
+          <input
+            class="input-form"
+            type="number"
+            inputmode="numeric"
+            maxlength="9"
+          />
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldset-title">5 Impacto de la Publicidad</legend>
@@ -332,24 +442,38 @@
           </p>
           <label class="form-label form-label-checkbox" for="sin-publicidad">
             Sin Publicidad
-            <input class="input-checkbox" type="checkbox" name="sin-publicidad" id="sin-publicidad" />
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="sin-publicidad"
+              id="sin-publicidad"
+              value="sin-publicidad"
+            />
           </label>
-          <label class="form-label form-label-checkbox" for="publicidad-limitada">
+          <label
+            class="form-label form-label-checkbox"
+            for="publicidad-limitada"
+          >
             Publicidad Limitada
             <input
               class="input-checkbox"
               type="checkbox"
               name="publicidad-limitada"
               id="publicidad-limitada"
+              value="publicidad-limitada"
             />
           </label>
-          <label class="form-label form-label-checkbox" for="no-importa-publicidad">
+          <label
+            class="form-label form-label-checkbox"
+            for="no-importa-publicidad"
+          >
             No me importa la publicidad
             <input
               class="input-checkbox"
               type="checkbox"
               name="no-importa-publicidad"
               id="no-importa-publicidad"
+              value="no-importa-publicidad"
             />
           </label>
 
