@@ -36,6 +36,7 @@
             name="name"
             id="name"
             placeholder="Ingresa tu nombre completo"
+            required
           />
           <label class="form-label" id="email-label" for="email">Email:</label>
           <input
@@ -44,6 +45,7 @@
             name="email"
             id="email"
             placeholder="Ingresa tu correo electronico"
+            required
           />
         </fieldset>
         <fieldset class="fieldset">
@@ -264,6 +266,7 @@
               type="radio"
               name="frecuencia"
               id="diariamente"
+              value="diariamente"
             />
           </label>
           <label
@@ -276,6 +279,7 @@
               type="radio"
               name="frecuencia"
               id="varias-a-la-semana"
+              value="varias-a-la-semana"
             />
           </label>
           <label
@@ -288,6 +292,7 @@
               type="radio"
               name="frecuencia"
               id="una-vez-a-la-semana"
+              value="una-vez-a-la-semana"
             />
           </label>
           <label class="form-label form-label-checkbox" for="raramente">
@@ -297,6 +302,7 @@
               type="radio"
               name="frecuencia"
               id="raramente"
+              value="raramente"
             />
           </label>
 
@@ -484,11 +490,11 @@
           </p>
           <label class="form-label form-label-checkbox" for="si">
             Si
-            <input class="input-checkbox" type="radio" name="si-o-no" id="si" />
+            <input class="input-checkbox" type="radio" name="si-o-no" id="si"  value="si"/>
           </label>
           <label class="form-label form-label-checkbox" for="no">
             No
-            <input class="input-checkbox" type="radio" name="si-o-no" id="no" />
+            <input class="input-checkbox" type="radio" name="si-o-no" id="no" value="si"/>
           </label>
         </fieldset>
         <fieldset class="fieldset">
@@ -520,7 +526,7 @@
             placeholder="Ingresa aquí tu respuesta"
           ></textarea>
         </fieldset>
-        <button class="button" type="button">Enviar</button>
+        <button class="button" type="submit" id="submit">Enviar</button>
       </form>
     </div>
   </body>
